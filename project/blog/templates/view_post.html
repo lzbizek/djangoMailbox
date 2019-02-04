@@ -1,0 +1,17 @@
+{% extends 'base.html' %} 
+{% block head_title %}Mailowa Grupa Dyskusyjna - {{ post.title }}{% endblock %}
+{% block title %}Mailowa Grupa Dyskusyjna{% endblock %}
+
+{% block content %}
+	<div class="contentBox">
+		<div class="postsMainBox">
+			<div class="postBox">
+				<div class="postBoxInner">
+					<a><h1 class="postHeader">{{ post.title }}</h1></a>
+					<p class="postAuthor">zamieszczone przez <font class="postAuthorName">{{ post.author }}</font>, {{ post.posted }} </p>
+					{{ post.body }}
+				</div>
+			</div>
+		</div>
+	<div>
+{% endblock %}

@@ -1,0 +1,14 @@
+<html>
+    <head>
+		{% load static %}
+
+		<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+		<title>{% block head_title %}Mailowa Grupa Dyskusyjna{% endblock %}</title>
+    </head>
+    <body>
+        <h1>{% block title %}Projekt PWP{% endblock %}</h1>
+        {% block content %}
+
+        {% endblock %}
+    </body>
+</html>

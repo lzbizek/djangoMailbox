@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}Mailowa Grupa Dyskusyjna{% endblock %}
+
+{% block content %}
+<div class="contentBox">
+	<div class="leftPanel">
+		<h2>Miesiąc</h2>
+		{% if categories %}
+			<ul>
+			{% for category in categories %}
+				<li><a href="{{ category.get_absolute_url }}">{{ category.title }}</a></li>
+			{% endfor %}
+			</ul>
+		{% else %}
+			<p>Brak wiadomości.</p>
+		{% endif %}
+
+		<h2>Dyskusje</h2>
+		{% if posts %}
+			<ul>
+			{% for post in posts %}
+				<li><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
+			{% endfor %}
+			</ul>
+		{% else %}
+			<p>Brak wiadomości.</p>
+		{% endif %}
+	</div>
+	<div class="postsMainBox">
+		{% if last10 %}
+
+			{% for topic in last10 %}
+			<div class="postBox">
+				<div class="postBoxInner">
+					<a href="{{ topic.get_absolute_url }}"><h1 class="postHeader">{{ topic.title }}</h1></a>
+					<p class="postAuthor">zamieszczone przez <font class="postAuthorName">{{ topic.author }}</font>, {{ topic.posted }} </p>
+					
+					{{ topic.body }}
+				</div>
+			</div>
+			{% endfor %}
+
+		{% else %}
+			<p>Brak wiadomości.</p>
+		{% endif %}
+	</div>
+</div>
+{% endblock %}

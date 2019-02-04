@@ -1,0 +1,64 @@
+/* site style */
+	a { text-decoration: none; }
+	a:link { color: #c6985c; }
+	a:visited { color: #9b8165; }
+	a:hover { color: #fff1ce; }
+	a:active { color: #fff1ce; } 
+	
+	body {
+		background-color: #24211c;
+		color: #c6985c;
+	}
+	
+	h1{
+		color: #c6985c;
+	}
+	
+	h2{
+		color: #c6985c;
+	}
+	
+/* classes */
+	.contentBox{}
+
+	.leftPanel{
+		float: left;
+		width: 15%;
+		word-wrap: break-word;
+	}
+
+	.postsMainBox{
+		float: left;
+		width: 80%;
+		word-wrap: break-word;
+		margin-left: 15px;
+
+	}
+
+	.postBox{
+		margin-top: 0px;
+		margin-bottom: 15px;
+		border-style: solid;
+	}
+
+	.postBoxInner{
+		margin-bottom: 15px;
+		margin-left: 10px;
+	}
+
+	.postHeader{
+		color: #c6985c;
+		margin-top: 0em;
+		margin-bottom: 0em;
+		font-size: 35;
+	}
+
+	.postAuthor{
+		margin-top: 0em;
+		font-size:14;
+	}
+
+	.postAuthorName{
+		color: #9b8165;
+		font-weight: bold;
+	}

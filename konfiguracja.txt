@@ -1,0 +1,13 @@
+1. za³o¿yæ adres e-mail na gmailu
+2. stworzyæ etykiety przetwarzane i historia
+3. utworzyæ filtr:
+- zawiera: #djangodyskusyjna
+- pomiñ odebrane
+- zastosuj etykiete przetwarzane
+- nie wysy³aj do spamu
+- nie oznaczaj jako wa¿ne
+
+4. skonfigurowaæ swoje dane logowania na maila w project/poczta.py
+5. wys³aæ na skrzynkê docelow¹ maila zaczynaj¹cego siê od #djangodyskusyjna aby dodaæ post
+
+w przypadku problemów z migracjami zakomentowaæ linie w urls.py
